@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+
+        <title>2048</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="gameplay.js"></script>
+    </head>
+
+    <body>
+        <h1>2048</h1>
+        <hr>
+        <h2>Score: <span id="score">0</span></h2>
+
+        <div id="menu">
+            <h3>Select Board Size</h3>
+
+            <button class="size-btn" onclick="startGame(4)">4×4</button>
+            <button class="size-btn" onclick="startGame(5)">5×5</button>
+            <button class="size-btn" onclick="startGame(6)">6×6</button>
+            <button class="size-btn" onclick="startGame(8)">8×8</button>
+        </div>
+
+        <div id="board"></div>
+
+        <div id="game-over">
+            <img src="meow.gif" alt="Dancing Cat">
+            <h1>💀 Skill Issue 💀</h1>
+            <button onclick="location.reload()">Try Again</button>
+        </div>
+
+    </body>
+</html>
