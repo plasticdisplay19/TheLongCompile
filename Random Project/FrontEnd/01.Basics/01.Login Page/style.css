@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#004ea8,#0c73e9);
+    position:relative;
+}
+
+/* Background Shapes */
+
+.shape{
+    position:absolute;
+}
+
+.circle{
+    width:420px;
+    height:420px;
+
+    border:35px solid rgba(255,255,255,.15);
+    border-radius:50%;
+
+    left:220px;
+    bottom:90px;
+}
+
+.pill{
+    width:280px;
+    height:90px;
+
+    background:linear-gradient(135deg,rgba(255,255,255,.9),rgba(255,255,255,.2));
+    border-radius:60px;
+    transform:rotate(78deg);
+    left:250px;
+    top:180px;
+}
+
+/* Logo */
+
+.logo{
+    position:absolute;
+    left:300px;
+    top:220px;
+}
+
+.bar{
+    position:absolute;
+
+    width:110px;
+    height:45px;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        135deg,
+        #b9deff,
+        #58a8ff
+    );
+}
+
+.left{
+    transform:rotate(45deg);
+}
+
+.right{
+    left:60px;
+    transform:rotate(-45deg);
+}
+
+/* Card */
+
+.login-box{
+    width:500px;
+    padding:40px;
+
+    position:relative;
+    overflow:hidden;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(15px);
+    color:white;
+}
+
+
+
+/* Text */
+
+h3{
+    margin-bottom:10px;
+}
+
+h1{
+    margin-bottom:30px;
+    font-size:42px;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    height:45px;
+
+    border:none;
+    border-radius:10px;
+
+    padding-left:15px;
+
+    margin-bottom:20px;
+
+    background:rgba(255,255,255,.9);
+}
+
+.forgot{
+    display:block;
+    color:white;
+    font-size:12px;
+    text-decoration:none;
+    margin-bottom:30px;
+}
+
+button{
+    width:100%;
+    height:45px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#032d6f;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+/* Socials */
+
+.continue{
+    text-align:center;
+    margin:25px 0;
+    font-size:13px;
+}
+
+.socials{
+    display:flex;
+    gap:15px;
+}
+
+.social{
+    flex:1;
+
+    background:white;
+    color:black;
+
+    font-size:20px;
+}
+
+.register{
+    text-align:center;
+    margin-top:25px;
+    font-size:13px;
+}
+
+.register a{
+    color:white;
+    font-weight:bold;
+}
